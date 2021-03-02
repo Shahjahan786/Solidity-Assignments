@@ -30,7 +30,7 @@ contract SaylaniDonation {
     }
     
     function donate(string memory name,  gender _gender) public payable {
-        require(msg.value == 6 ether, "6 ether required");
+        require(msg.value == 10 ether, "10 ether required");
        
         Doner memory doner = Doner(name,msg.sender,  _gender);
         donerList[msg.sender] = doner;
